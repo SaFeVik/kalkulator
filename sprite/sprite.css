@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Solway:wght@300;400;500;700;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #7771e0;
+    color: #1f2839;
+    font-family: 'Solway', serif;
+}
+h1{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+
+header{
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding-inline: 60px;
+}
+.hjem{
+    text-decoration: none;
+    color: #1f2839;
+    font-weight: bold;
+}
+.hjem:hover > .fa-arrow-left{
+    animation-name: arrow;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes arrow {
+    0% {transform: translateX(0px);}
+    50% {transform: translateX(-5px);}
+    100% {transform: translateX(0px);}
+}
+
+.kalkulatorer{
+    margin: 30px auto;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    padding-inline: 15px;
+}
+input{
+    width: 100px;
+    border-radius: 5px;
+    padding: 2px;
+    background-color: #aaa6f2;
+}
+.kalkulatorer > div{
+    display: flex;
+    gap: 8px;
+}
+button{
+    padding: 5px;
+    background-color: #aaa6f2;
+    border-radius: 8px;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+/* Bokser for å holde label og input på lik linje */
+.box{
+    display: flex;
+}
+.box p{
+    margin-left: 5px;
+}
+
+/* Alt som har med hjelp å gjøre */
+.hjelp{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.hjelp:hover{
+    color: #000000;
+}
+.kalkulatorer > p{
+    color: #003077;
+    display: none;
+}
+.hjelpText1.vis, .hjelpText2.vis{
+    display: block;
+}
+
+.strek{
+    border-bottom: 1px solid rgb(255, 252, 252);
+    max-width: 400px;
+    margin: 30px auto;
+}

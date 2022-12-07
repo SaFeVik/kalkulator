@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprite</title>
+
+    <link rel="stylesheet" href="sprite.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <a href="../index.html" class="hjem" id="hjem"><i class="fa fa-arrow-left"></i> HJEM</a>
+        <h1>Leskedrikk kalkulator</h1>
+        <br>
+        <p>Her kan man konvertere de snåleste væskene. Bare fantasien setter grenser? </p>
+    </header>
+    <div class="kalkulator1 kalkulatorer">
+        <h4 class="hjelp1 hjelp">HJELP!</h4>
+        <p class="hjelpText1">Skriv inn prosent og mengde på drikkevare 1. Så skriver du inn mengde eller prosent på drikkevare 2. Mengden REN leskedrikk vil da være lik på begge drikkvarene.</p>
+        <h3>DRIKKEVARE 1</h3>
+        <div class="drikkevare1">
+            <div class="box">
+                <input type="number" id="prosent1">
+                <p>%</p>
+            </div>
+            <div class="box">
+                <input type="number" id="mengde1">
+                <p>ML</p>
+            </div>
+        </div>
+        <h3>DRIKKEVARE 2</h3>
+        <div class="drikkevare2">
+            <div class="box">
+                <input type="number" id="prosent2">
+                <p>%</p>
+            </div>
+            <div class="box">
+                <input type="number" id="mengde2">
+                <p>ML</p>
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="konverter-prosent">Konverter <i class="fa fa-arrow-up"></i></button>
+            <button id="konverter-mengde">Konverter <i class="fa fa-arrow-up"></i></button>
+        </div>
+    </div>
+
+    <div class="strek"></div>
+
+    <div class="kalkulator2 kalkulatorer">
+        <h4 class="hjelp2 hjelp">HJELP!</h4>
+        <p class="hjelpText2">Skriv inn prosent og mengde på drikkevaren så får du se hvor mange pils med 4,5% det tilsvarer.</p>
+        <h3>DRIKKEVARE</h3>
+        <div class="drikkevare">
+            <div class="box">
+                <input type="number" id="prosent3">
+                <p>%</p>
+            </div>
+            <div class="box">
+                <input type="number" id="mengde3">
+                <p>ML</p>
+            </div>
+        </div>
+
+        <h3 id="pils">ANTALL PILS:</h3>
+    </div>
+
+<script src="sprite.js"></script>
+</body>
+</html>
