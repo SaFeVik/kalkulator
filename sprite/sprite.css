@@ -52,6 +52,7 @@ header{
     flex-direction: column;
     align-items: center;
     max-width: 400px;
+    padding-inline: 15px;
 }
 input{
     width: 130px;
@@ -71,6 +72,7 @@ button{
     cursor: pointer;
     font-size: 18px;
     margin-top: 10px;
+    color: black;
 }
 
 /* Bokser for å holde label og input på lik linje */
@@ -92,6 +94,7 @@ button{
 .kalkulatorer > p{
     color: #003077;
     display: none;
+    text-align: justify;
 }
 .hjelpText1.vis, .hjelpText2.vis{
     display: block;
